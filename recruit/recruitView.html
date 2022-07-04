@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="uTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	
+	<style type="text/css">
+		body {
+			margin: 5% 20%;
+		}
+		
+		th{
+			width: 160px;
+			text-align:center;
+		}
+		
+		input, select {
+			padding: 5px;
+		}
+		
+		table {
+			width: 100%;
+		}
+		
+		table, th, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+			padding: 10px;
+		}
+		
+		.second {
+			text-align: center;
+		}
+	
+	
+	</style>
+</head>
+
+<body>
+	<center><h3><b>입사지원서 작성</b></h3></center>
+	<center><h5><b>내용을 작성해주세요.</b></h5></center>
+	<div class="first">
+		<table>
+			<tr>
+				<th>구분</th>
+				<td>
+					<select name="n/c">
+						<option value="new">신입
+						<option value="changer">경력
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<th>제목</th>
+				<td>
+					<input type="text" name="title" size=130>
+				</td>
+			</tr>
+			<tr>
+				<th>작성자</th>
+				<td>
+					<input type="text" name="user" size=20>
+				</td>
+			</tr>
+			<tr>
+				<th>비밀번호</th>
+				<td>
+					<input type="password" name="password" size=10>&nbsp;
+					<small style="color: red;">※ 다른 사람이 열람할 우려가 있으므로 유추하기 쉬운 비밀번호는 삼가해주시기 바랍니다.</small>
+				</td>
+			</tr>
+			<tr>
+				<th>첨부파일</th>
+				<td>
+					<input type="file" name="imagefile">
+				</td>
+			</tr>
+		</table>
+	</div>
+	<br><hr><br>
+	<div class="second">
+		<table>
+			<tr>
+			<th width="120px" rowspan="4">사진<br><small>(첨부파일로 업로드)</small>
+			</th>
+			<th width="100px"><b>성&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;명</b></th>
+			<td colspan="3">
+				[한글] <input style="border: none;" type="text" name="user" size=20>
+				[영문] <input style="border: none;" type="text" name="user" size=20>
+				[한자] <input style="border: none;" type="text" name="user" size=20>
+			</td>
+		</tr>
+		<tr>
+			<th><b>주민등록번호</b></th>
+			<td width="350px"></td>
+			<td width="100px"><b>성&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;별</b></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td width="100px"><b>주&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;소</b></td>
+			<td colspan="3"></td>
+		</tr>
+		<tr>
+			<td><b>전화번호</b></td>
+			<td></td>
+			<td><b>이메일주소</b></td>
+			<td></td>
+		</tr>
+		</table>
+	</div>
+</body>
+</html>
