@@ -47,8 +47,8 @@
 	<div class="first">
 		<table>
 			<tr>
-				<th>구분</th>
-				<td width="15%">
+				<th width="20%">구분</th>
+				<td width="20%">
 					<center><select name="n/c">
 						<option value="">선택
 						<option value="new">신입
@@ -62,8 +62,12 @@
 			</tr>
 			<tr>
 				<th>작성자</th>
-				<td colspan="3">
+				<td>
 					<input type="text" name="user">
+				</td>
+				<th>지원분야</th>
+				<td>
+					<input type="text" name="field">
 				</td>
 			</tr>
 			<tr>
@@ -325,23 +329,25 @@
 			</tr>
 		</table>
 	</div>
-	<br><br>
-		<center>
+	<br><br><br>
+		<button style="border: white; border-radius: 10px; color: white; background-color: indianred; 
+		width: 100px; height: 40px; margin: 0 0 0 220px" onclick="cancel();">🔙 뒤로가기</button>
 		<input style="border: white; border-radius: 10px; color: white; background-color: skyblue; 
-		width: 70px; height: 40px; margin: 0 50px 0 0" type="submit" id="submit" value="✔ 제출" onclick="save();">
+		width: 70px; height: 40px; margin: 0 0 0 250px" type="submit" id="submit" value="✔ 제출" onclick="save();">
 		<input style="border: white; border-radius: 10px; color: white; background-color: lightgray;
-		width: 80px; height: 40px; margin: 0 0 0 50px" type="reset" id="reset" value="🗑 초기화" onclick="here();">
-		</center>
+		width: 80px; height: 40px; margin: 0 0 0 280px" type="reset" id="reset" value="🗑 초기화" onclick="here();">
 	</form>
 	
 	<script type="text/javascript">
+	function cancel() {
+		alert("작성을 취소하시겠습니까?");
+		document.getElementById("form").cancel();
+	}
 	function save() {
-		/* alert("nickname: " + document.getElementById("nickname").value); */
 		alert("제출하시겠습니까?");
 		document.getElementById("form").submit();
 	}
 	function here() {
-		/* alert("nickname: " + document.getElementById("nickname").value); */
 		alert("내용을 모두 지우시겠습니까?");
 		document.getElementById("form").reset();
 	}
