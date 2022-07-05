@@ -12,7 +12,8 @@
 		
 		th{
 			width: 160px;
-			text-align:center;
+			text-align: center;
+			background-color: lightgray;
 		}
 		
 		input, select {
@@ -41,6 +42,8 @@
 <body>
 	<center><h3><b>입사지원서 작성</b></h3></center>
 	<center><h5><b>내용을 작성해주세요.</b></h5></center>
+	<br>
+	<form action="recruitList.html">
 	<div class="first">
 		<table>
 			<tr>
@@ -82,8 +85,8 @@
 	<div class="second">
 		<table>
 			<tr>
-				<th rowspan="4">사진<br><small>(첨부파일로 업로드)</small>
-				</th>
+				<td rowspan="4">사진<br><small>(첨부파일로 업로드)</small>
+				</td>
 				<th width="15%"><b>성&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;명</b></th>
 				<td colspan="3">
 					[한글] <input style="border: none;" type="text" name="kor" size=15>&nbsp;&nbsp;&nbsp;
@@ -93,7 +96,7 @@
 			</tr>
 			<tr>
 				<th><b>주민등록번호</b></th>
-				<td width="25%"><input style="border: none;" type="text" name="id" size=25></td>
+				<td width="30%"><input style="border: none;" type="text" name="id" size=25></td>
 				<th width="15%"><b>성&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;별</b></th>
 				<td>
 					<center><input type="radio" name="sex">남&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -103,7 +106,7 @@
 			<tr>
 				<th><b>주&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;소</b></th>
 				<td colspan="3">
-					<input style="border: none;" type="text" name="address" size=70>
+					<input style="border: none;" type="text" name="address" size=85>
 				</td>
 			</tr>
 			<tr>
@@ -120,7 +123,7 @@
 		<br>
 		<table>
 			<tr>
-				<th style="background-color:gray;" rowspan="3">학력사항</th>
+				<th rowspan="3">학력사항</th>
 				<th width="15%"><b>재학기간</b></th>
 				<th width="20%"><b>학&nbsp;&nbsp;교&nbsp;&nbsp;명</b></th>
 				<th width="20%"><b>전공</b></th>
@@ -165,12 +168,12 @@
 		<br>
 		<table>
 			<tr>
-				<th style="background-color:gray; width:7%" rowspan="4">외국어</th>
+				<th width="7%" rowspan="4">외국어</th>
 				<th width="15%"><b>시험명</b></th>
 				<th width="10%"><b>자격취득일</b></th>
 				<th width="3%"><b>점수</b></th>
 				<th width="15%"><b>발급 기관</b></th>
-				<th style="background-color:gray; width:7%" rowspan="4">자격/면허</th>
+				<th width="7%" rowspan="4">자격/면허</th>
 				<th width="15%"><b>자격증명</b></th>
 				<th width="10%"><b>자격취득일</b></th>
 				<th width="15%"><b>발급 기관</b></th>
@@ -248,7 +251,7 @@
 		<br>
 		<table>
 			<tr>
-				<th style="background-color:gray; width:8%;" rowspan="4">경력 및 활동사항</th>
+				<th width="8%" rowspan="4">경력 및 활동사항</th>
 				<th width="10%"><b>활동명</b></th>
 				<th width="10%"><b>기관명</b></th>
 				<th width="25%"><b>기간</b></th>
@@ -300,7 +303,7 @@
 		<br>
 		<table>
 			<tr>
-				<th style="background-color:gray;" rowspan="3">기타</th>
+				<th rowspan="3">기타</th>
 				<th width="10%"><b>병역</b></th>
 				<td width="60%">
 					<input type="radio" name="mili">필&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -322,5 +325,27 @@
 			</tr>
 		</table>
 	</div>
+	<br><br>
+		<center>
+		<input style="border: white; border-radius: 10px; color: white; background-color: skyblue; 
+		width: 70px; height: 40px; margin: 0 50px 0 0" type="submit" id="submit" value="✔ 제출" onclick="save();">
+		<input style="border: white; border-radius: 10px; color: white; background-color: lightgray;
+		width: 80px; height: 40px; margin: 0 0 0 50px" type="reset" id="reset" value="🗑 초기화" onclick="here();">
+		</center>
+	</form>
+	
+	<script type="text/javascript">
+	function save() {
+		/* alert("nickname: " + document.getElementById("nickname").value); */
+		alert("제출하시겠습니까?");
+		document.getElementById("form").submit();
+	}
+	function here() {
+		/* alert("nickname: " + document.getElementById("nickname").value); */
+		alert("내용을 모두 지우시겠습니까?");
+		document.getElementById("form").reset();
+	}
+	</script>
+	
 </body>
 </html>
