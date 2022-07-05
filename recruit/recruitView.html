@@ -6,13 +6,14 @@
 	<title></title>
 	
 	<style type="text/css">
+		
 		body {
-			margin: 5% 20%;
+			margin: 5% 15%;
 		}
 		
 		th{
-			width: 160px;
-			text-align:center;
+			text-align: center;
+			background-color: lightgray;
 		}
 		
 		input, select {
@@ -32,49 +33,31 @@
 		.second {
 			text-align: center;
 		}
+		
 	
 	
 	</style>
 </head>
 
 <body>
-	<center><h3><b>입사지원서 작성</b></h3></center>
-	<center><h5><b>내용을 작성해주세요.</b></h5></center>
+	<center><h3><b>고길동</b></h3></center>
+	<center><h5><b>입사지원서</b></h5></center>
+	<br>
 	<div class="first">
 		<table>
 			<tr>
-				<th>구분</th>
-				<td>
-					<select name="n/c">
-						<option value="new">신입
-						<option value="changer">경력
-					</select>
+				<th width="20%">구분</th>
+				<td width="20%">
+				<center>경력</center>
 				</td>
-			</tr>
-			<tr>
 				<th>제목</th>
-				<td>
-					<input type="text" name="title" size=130>
-				</td>
+				<td>입사지원자_고길동</td>
 			</tr>
 			<tr>
 				<th>작성자</th>
-				<td>
-					<input type="text" name="user" size=20>
-				</td>
-			</tr>
-			<tr>
-				<th>비밀번호</th>
-				<td>
-					<input type="password" name="password" size=10>&nbsp;
-					<small style="color: red;">※ 다른 사람이 열람할 우려가 있으므로 유추하기 쉬운 비밀번호는 삼가해주시기 바랍니다.</small>
-				</td>
-			</tr>
-			<tr>
-				<th>첨부파일</th>
-				<td>
-					<input type="file" name="imagefile">
-				</td>
+				<td>고길동</td>
+				<th>지원분야</th>
+				<td>정보보안</td>
 			</tr>
 		</table>
 	</div>
@@ -82,32 +65,121 @@
 	<div class="second">
 		<table>
 			<tr>
-			<th width="120px" rowspan="4">사진<br><small>(첨부파일로 업로드)</small>
-			</th>
-			<th width="100px"><b>성&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;명</b></th>
-			<td colspan="3">
-				[한글] <input style="border: none;" type="text" name="user" size=20>
-				[영문] <input style="border: none;" type="text" name="user" size=20>
-				[한자] <input style="border: none;" type="text" name="user" size=20>
-			</td>
-		</tr>
-		<tr>
-			<th><b>주민등록번호</b></th>
-			<td width="350px"></td>
-			<td width="100px"><b>성&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;별</b></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td width="100px"><b>주&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;소</b></td>
-			<td colspan="3"></td>
-		</tr>
-		<tr>
-			<td><b>전화번호</b></td>
-			<td></td>
-			<td><b>이메일주소</b></td>
-			<td></td>
-		</tr>
+				<td rowspan="4"><img src="./image/고길동.jpg" style=size:cover;><br>
+				</td>
+				<th width="15%"><b>성&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;명</b></th>
+				<td colspan="3">
+					[한글] 고길동&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					[영문] Go Gil Dong
+				</td>
+			</tr>
+			<tr>
+				<th><b>주민등록번호</b></th>
+				<td width="30%">690512-1234567</td>
+				<th width="15%"><b>성&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;별</b></th>
+				<td><center>남</center></td>
+			</tr>
+			<tr>
+				<th><b>주&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;소</b></th>
+				<td colspan="3">서울특별시 도봉구 쌍문동 2-2</td>
+			</tr>
+			<tr>
+				<th><b>전화번호</b></th>
+				<td>011-000-0000</td>
+				<th><b>이메일주소</b></th>
+				<td>gildong@hanmail.net</td>
+			</tr>
 		</table>
+		<br>
+		<table>
+			<tr>
+				<th rowspan="3">학력사항</th>
+				<th width="15%"><b>재학기간</b></th>
+				<th width="20%"><b>학&nbsp;&nbsp;교&nbsp;&nbsp;명</b></th>
+				<th width="20%"><b>전공</b></th>
+				<th width="8%"><b>학점</b></th>
+				<th width="15%"><b>소재지</b></th>
+			</tr>
+			<tr>
+				<td>1987.03~1990.03</td>
+				<td>ㅇㅇ공업고등학교</td>
+				<td>-</td>
+				<td>-</td>
+				<td>서울시 도봉구</td>
+			</tr>
+			<tr>
+				<td>1992.03~1996.02</td>
+				<td>ㅇㅇ대학교</td>
+				<td>컴퓨터공학과</td>
+				<td>3.0 / 4.5</td>
+				<td>서울시 광진구</td>
+			</tr>
+		</table>
+		<br>
+		<table>
+			<tr>
+				<th width="7%" rowspan="4">외국어</th>
+				<th width="15%"><b>시험명</b></th>
+				<th width="8%"><b>자격취득일</b></th>
+				<th width="7%"><b>점수</b></th>
+				<th width="20%"><b>발급 기관</b></th>
+				<th width="7%" rowspan="4">자격/면허</th>
+				<th width="15%"><b>자격증명</b></th>
+				<th width="8%"><b>자격취득일</b></th>
+				<th width="20%"><b>발급 기관</b></th>
+			</tr>
+			<tr>
+				<td>TOEIC</td>
+				<td>2020.08</td>
+				<td>750</td>
+				<td>한국TOEIC위원회</td>
+				<td>정보보안기사</td>
+				<td>2012.06</td>
+				<td>한국산업인력공단</td>
+			</tr>
+		</table>
+		<br>
+		<table>
+			<tr>
+				<th width="8%" rowspan="4">경력 및 활동사항</th>
+				<th width="10%"><b>활동명</b></th>
+				<th width="10%"><b>기관명</b></th>
+				<th width="15%"><b>기간</b></th>
+				<th width="20%"><b>활동내용</b></th>
+				<th width="8%" rowspan="4">기타</th>
+				<th width="5%"><b>병역</b></th>
+				<th width="10%"><b>취미</b></th>
+				<th width="10%"><b>특기</b></th>
+			</tr>
+			<tr>
+				<td>ㅇㅇㅇㅇㅇ</td>
+				<td>ㅁㅁㅁㅁㅁ</td>
+				<td>1999.01~2005.06</td>
+				<td>-</td>
+				<td rowspan="3">필</td>
+				<td rowspan="3">서예, 신문보기</td>
+				<td rowspan="3">바둑</td>
+			</tr>
+			<tr>
+				<td>ㅇㅇㅇㅇㅇ</td>
+				<td>ㅁㅁㅁㅁㅁ</td>
+				<td>2005.12~2013.09</td>
+				<td>-</td>
+			</tr>
+			<tr>
+				<td>ㅇㅇㅇㅇㅇ</td>
+				<td>ㅁㅁㅁㅁㅁ</td>
+				<td>2013.11~2021.04</td>
+				<td>-</td>
+			</tr>
+		</table>
+		<br>
 	</div>
+	<br><br><br>
+	<center>
+	<a href="./recruitList.html"><button style="border: white; border-radius: 10px; color: white; background-color: indianred; 
+	width: 100px; height: 40px;">↩ 뒤로가기</button></a>
+	</center>
+	
 </body>
 </html>

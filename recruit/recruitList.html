@@ -12,6 +12,19 @@
 			font-family: 'OTWelcomeBA'; 
 		}
 		
+		a:link {
+			color:black;
+			text-decoration: none;
+		}
+		a:visited {
+			color:black;
+			text-decoration: none;
+		}
+		a:hover {
+			color:mediumpurple;
+			text-decoration: none;
+		}
+		
 		body {
 			margin: 2% 20%;
 			text-align: center;
@@ -34,7 +47,7 @@
 		}
 		
 		th {
-			background-color: lightyellow;
+			background-color: lightblue;
 		}
 		
 		
@@ -47,7 +60,7 @@
 		
 		.header::after {
 			content: "";
-			background: url('sky.jpg') no-repeat center;
+			background: url('./image/sky.jpg') no-repeat center;
 			background-size: cover;
 			opacity: 0.5;
 			position: absolute;
@@ -65,65 +78,81 @@
 <body>
 	<div class='header'>
 		<br><br><br>
-		<h1>입&nbsp;&nbsp;&nbsp;사&nbsp;&nbsp;&nbsp;지&nbsp;&nbsp;&nbsp;원</h1>
+		<a href="./recruitList.html"><h1>입&nbsp;&nbsp;&nbsp;사&nbsp;&nbsp;&nbsp;지&nbsp;&nbsp;&nbsp;원</h1></a>
 		<br>
-		<br><br>
-		<input style="height: 30px; float: right;" type="button" value="🔍검색" size=10>
-		<input style="height: 25px; float: right; margin: 0 10px 0 0;" type="text" name="search" size=20>
 		<br><br>
 	</div>
 	<br>
 	<hr>
-	<br><br>
+	<br>
+	<input style="float: right; background-color: slategray; color: white; border: white; border-radius: 5px; width: 70px; height: 30px;" type="button" value="🔍검색">
+	<input style="float: right; margin: 0 10px 0 0; height: 30px;" type="search" name="search" size=20>
+	<br><br><br>
 	<div>
 		<table style="background-color: white">
 			<tr>
 				<th width= "5%">번호</th>
 				<th width= "10%">구분</th>
 				<th width= "15%">지원분야</th>
-				<th width= "40%">제목</th>
+				<th width= "40%">제&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;목</th>
 				<th width= "15%;">작성자</th>
 				<th width= "15%">게시일</th>
+			</tr>
+			<tr>
+				<td><a href="recruitpass.html">7</a></td>
+				<td><a href="recruitpass.html">경력</a></td>
+				<td><a href="recruitpass.html">정보보안</a></td>
+				<td><a href="recruitpass.html">입사지원자_고길동</a></td>
+				<td><a href="recruitpass.html">고길동</a></td>
+				<td><a href="recruitpass.html">2022.07.05</a></td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>신입</td>
+				<td>백엔드</td>
+				<td>입사지원</td>
+				<td>엄석대</td>
+				<td>2022.07.05</td>
 			</tr>
 			<tr>
 				<td>5</td>
 				<td>신입</td>
 				<td>백엔드</td>
-				<td>&nbsp;</td>
-				<td>도레미</td>
+				<td>입사지원_김진리</td>
+				<td>김진리</td>
 				<td>2022.07.05</td>
 			</tr>
 			<tr>
 				<td>4</td>
-				<td>경력</td>
+				<td>신입</td>
 				<td>모바일</td>
-				<td>&nbsp;</td>
+				<td>입사지원합니다.</td>
 				<td>파솔라</td>
-				<td>2022.07.05</td>
+				<td>2022.07.04</td>
 			</tr>
 			<tr>
 				<td>3</td>
 				<td>경력</td>
 				<td>시스템엔지니어</td>
-				<td>&nbsp;</td>
+				<td>입사지원</td>
 				<td>이루리</td>
 				<td>2022.07.04</td>
 			</tr>
 			<tr>
 				<td>2</td>
 				<td>신입</td>
-				<td>정보보안</td>
-				<td>&nbsp;</td>
-				<td>고길동</td>
+				<td>백엔드</td>
+				<td>백엔드 개발팀 지원자 도레미입니다.</td>
+				<td>도레미</td>
 				<td>2022.07.04</td>
 			</tr>
 			<tr>
 				<td>1</td>
 				<td>경력</td>
 				<td>프론트엔드</td>
-				<td>&nbsp;</td>
+				<td>입사지원합니다.</td>
 				<td>홍길동</td>
-				<td>2022.07.04</td>
+				<td>2022.07.03</td>
 			</tr>
 			
 		</table>
