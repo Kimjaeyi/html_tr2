@@ -42,7 +42,7 @@
 	<center><h3><b>입사지원서 작성</b></h3></center>
 	<center><h5><b>내용을 작성해주세요.</b></h5></center>
 	<br>
-	<form action="recruitList.html">
+	<form action="recruitView.html">
 	<div class="first">
 		<table>
 			<tr>
@@ -254,11 +254,15 @@
 		<br>
 		<table>
 			<tr>
-				<th width="8%" rowspan="4">경력 및 활동사항</th>
+				<th width="10%" rowspan="4">경력<br>및<br>활동사항</th>
 				<th width="10%"><b>활동명</b></th>
 				<th width="10%"><b>기관명</b></th>
 				<th width="25%"><b>기간</b></th>
-				<th width="45%"><b>활동내용</b></th>
+				<th width="10%"><b>활동내용</b></th>
+				<th width="8%" rowspan="4">기타</th>
+				<th width="8%"><b>병역</b></th>
+				<th width="10%"><b>취미</b></th>
+				<th width="10%"><b>특기</b></th>
 			</tr>
 			<tr>
 				<td>
@@ -271,7 +275,18 @@
 					<input style="border: none;" type="date" name="date">  ~  <input style="border: none;" type="date" name="date">
 				</td>
 				<td>
-					<input style="border: none;" type="text" size=40>
+					<input style="border: none;" type="text" size=30>
+				</td>
+				<td rowspan="3">
+					<input type="radio" name="mili">필&nbsp;
+					<input type="radio" name="mili">미필&nbsp;
+					<input type="radio" name="mili">면제
+				</td>
+				<td rowspan="3">
+					<input style="border: none; height: 50px;" type="text" size=10>
+				</td>
+				<td rowspan="3">
+					<input style="border: none; height: 50px;" type="text" size=10>
 				</td>
 			</tr>
 			<tr>
@@ -285,7 +300,7 @@
 					<input style="border: none;" type="date" name="date">  ~  <input style="border: none;" type="date" name="date">
 				</td>
 				<td>
-					<input style="border: none;" type="text" size=40>
+					<input style="border: none;" type="text" size=25>
 				</td>
 			</tr>
 			<tr>
@@ -299,42 +314,21 @@
 					<input style="border: none;" type="date" name="date">  ~  <input style="border: none;" type="date" name="date">
 				</td>
 				<td>
-					<input style="border: none;" type="text" size=40>
+					<input style="border: none;" type="text" size=25>
 				</td>
 			</tr>
 		</table>
 		<br>
-		<table>
-			<tr>
-				<th rowspan="3">기타</th>
-				<th width="10%"><b>병역</b></th>
-				<td width="60%">
-					<input type="radio" name="mili">필&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					<input type="radio" name="mili">미필&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					<input type="radio" name="mili">면제
-				</td>
-			</tr>
-			<tr>
-				<th width="10%"><b>취미</b></th>
-				<td width="60%">
-					<input style="border: none;" type="text" size=60>
-				</td>
-			</tr>
-			<tr>
-				<th width="10%"><b>특기</b></th>
-				<td width="60%">
-					<input style="border: none;" type="text" size=60>
-				</td>
-			</tr>
-		</table>
 	</div>
 	<br><br><br>
+		<center>
 		<button style="border: white; border-radius: 10px; color: white; background-color: indianred; 
-		width: 100px; height: 40px; margin: 0 0 0 220px" onclick="cancel();">🔙 뒤로가기</button>
+		width: 100px; height: 40px;" onclick="cancel();">🔙 뒤로가기</button>&nbsp;&nbsp;
 		<input style="border: white; border-radius: 10px; color: white; background-color: skyblue; 
-		width: 70px; height: 40px; margin: 0 0 0 250px" type="submit" id="submit" value="✔ 제출" onclick="save();">
+		width: 70px; height: 40px;" type="submit" id="submit" value="✔ 제출" onclick="save();">&nbsp;&nbsp;
 		<input style="border: white; border-radius: 10px; color: white; background-color: lightgray;
-		width: 80px; height: 40px; margin: 0 0 0 280px" type="reset" id="reset" value="🗑 초기화" onclick="here();">
+		width: 80px; height: 40px;" type="reset" id="reset" value="🗑 초기화" onclick="here();">&nbsp;&nbsp;
+		</center>
 	</form>
 	
 	<script type="text/javascript">
