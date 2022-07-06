@@ -1,1 +1,345 @@
-/* 수정화면 */
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="uTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	
+	<style type="text/css">
+		body {
+			margin: 5% 15%;
+		}
+		
+		th{
+			text-align: center;
+			background-color: lightgray;
+		}
+		
+		input, select {
+			padding: 5px;
+		}
+		
+		table {
+			width: 100%;
+		}
+		
+		table, th, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+			padding: 10px;
+		}
+		
+		.second {
+			text-align: center;
+		}
+		
+	
+	
+	</style>
+</head>
+
+<body>
+	<center><h3><b>고길동</b></h3></center>
+	<center><h5><b>입사지원서</b></h5></center>
+	<br>
+	<form action="recruitView.html">
+	<div class="first">
+		<table>
+			<tr>
+				<th width="20%">구분</th>
+				<td width="20%">
+					<center><select name="n/c">
+						<option value="changer">경력
+						<option value="">선택
+						<option value="new">신입
+						<option value="changer">경력
+					</select></center>
+				</td>
+				<th>제목</th>
+				<td>
+					<input type="text" name="title" value="입사지원자_고길동" size=70>
+				</td>
+			</tr>
+			<tr>
+				<th>작성자</th>
+				<td>
+					<input type="text" name="user" value="고길동">
+				</td>
+				<th>지원분야</th>
+				<td>
+					<input type="text" name="field" value="정보보안">
+				</td>
+			</tr>
+			<tr>
+				<th>비밀번호</th>
+				<td colspan="3">
+					<input type="password" name="password" value="123" size=10>&nbsp;
+					<small style="color: red;">※ 다른 사람이 열람할 우려가 있으므로 유추하기 쉬운 비밀번호는 삼가해주시기 바랍니다.</small>
+				</td>
+			</tr>
+			<tr>
+				<th>첨부파일</th>
+				<td colspan="3">
+					<input type="file" name="imagefile">
+				</td>
+			</tr>
+		</table>
+	</div>
+	<br><hr><br>
+	<div class="second">
+		<table>
+			<tr>
+				<td rowspan="4"><img src="./image/고길동.jpg" style=size:cover;>
+				</td>
+				<th width="15%"><b>성&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;명</b></th>
+				<td colspan="3">
+					[한글] <input style="border: none;" type="text" name="kor" size=15 value="고길동">&nbsp;&nbsp;&nbsp;
+					[영문] <input style="border: none;" type="text" name="eng" size=15 value="Go Gil Dong">&nbsp;&nbsp;&nbsp;
+					[한자] <input style="border: none;" type="text" name="chi" size=15>
+				</td>
+			</tr>
+			<tr>
+				<th><b>주민등록번호</b></th>
+				<td width="30%"><input style="border: none;" type="text" name="id" size=25 value="690512-1234567"></td>
+				<th width="15%"><b>성&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;별</b></th>
+				<td>
+					<center><input type="radio" name="sex">남&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="sex">여</center>
+				</td>
+			</tr>
+			<tr>
+				<th><b>주&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;소</b></th>
+				<td colspan="3">
+					<input style="border: none;" type="text" name="address" size=85 value="서울특별시 도봉구 쌍문동 2-2">
+				</td>
+			</tr>
+			<tr>
+				<th><b>전화번호</b></th>
+				<td>
+					<input style="border: none;" type="text" name="user" size=25 value="011-000-0000">
+				</td>
+				<th><b>이메일주소</b></th>
+				<td>
+					<input style="border: none;" type="text" name="user" size=25 value="gildong@hanmail.net">
+				</td>
+			</tr>
+		</table>
+		<br>
+		<table>
+			<tr>
+				<th rowspan="3">학력사항</th>
+				<th width="15%"><b>재학기간</b></th>
+				<th width="15%"><b>학&nbsp;&nbsp;교&nbsp;&nbsp;명</b></th>
+				<th width="20%"><b>전공</b></th>
+				<th width="10%"><b>학점</b></th>
+				<th width="15%"><b>소재지</b></th>
+			</tr>
+			<tr>
+				<td>
+					<input style="border: none;" type="text" size=15 value="1987.03~1990.03">
+				</td>
+				<td>
+					<input style="border: none;" type="text" size=18 value="ㅇㅇ공업고등학교">
+				</td>
+				<td>
+					<input style="border: none;" type="text" size=20 value="-">
+				</td>
+				<td>
+					<input style="border: none;" type="text" size=1.5> / <input style="border: none;" type="text" size=1.5>
+				</td>
+				<td>
+					<input style="border: none;" type="text" size=15 value="서울시 도봉구">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input style="border: none;" type="text" size=15 value="1992.03~1996.02">
+				</td>
+				<td>
+					<input style="border: none;" type="text" size=18 value="ㅇㅇ대학교">
+				</td>
+				<td>
+					<input style="border: none;" type="text" size=20 value="컴퓨터공학과">
+				</td>
+				<td>
+					<input style="border: none;" type="text" size=1.5 value="3.0"> / <input style="border: none;" type="text" size=1.5 value="4.5">
+				</td>
+				<td>
+					<input style="border: none;" type="text" size=15 value="서울시 광진구">
+				</td>
+			</tr>
+		</table>
+		<br>
+		<table>
+			<tr>
+				<th width="7%" rowspan="4">외국어</th>
+				<th width="15%"><b>시험명</b></th>
+				<th width="10%"><b>자격취득일</b></th>
+				<th width="3%"><b>점수</b></th>
+				<th width="15%"><b>발급 기관</b></th>
+				<th width="7%" rowspan="4">자격/면허</th>
+				<th width="15%"><b>자격증명</b></th>
+				<th width="10%"><b>자격취득일</b></th>
+				<th width="15%"><b>발급 기관</b></th>
+			</tr>
+			<tr>
+				<td>
+					<input style="border: none;" type="text" size=12 value="TOEIC">
+				</td>
+				<td>
+					<input style="border: none;" type="text" size=8 value="2020.08">
+				</td>
+				<td>
+					<input style="border: none;" type="text" size=3 value="750">
+				</td>
+				<td>
+					<input style="border: none;" type="text" size=12 value="한국TOEIC위원회">
+				</td>
+				<td>
+					<input style="border: none;" type="text" size=12  value="정보보안기사">
+				</td>
+				<td>
+					<input style="border: none;" type="text" size=8 value="2012.06">
+				</td>
+				<td>
+					<input style="border: none;" type="text" size=12 value="한국산업인력공단">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input style="border: none;" type="text" size=12>
+				</td>
+				<td>
+					<input style="border: none;" type="text" size=8>
+				</td>
+				<td>
+					<input style="border: none;" type="text" size=1>
+				</td>
+				<td>
+					<input style="border: none;" type="text" size=12>
+				</td>
+				<td>
+					<input style="border: none;" type="text" size=12>
+				</td>
+				<td>
+					<input style="border: none;" type="text" size=8>
+				</td>
+				<td>
+					<input style="border: none;" type="text" size=12>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input style="border: none;" type="text" size=12>
+				</td>
+				<td>
+					<input style="border: none;" type="text" size=8>
+				</td>
+				<td>
+					<input style="border: none;" type="text" size=3>
+				</td>
+				<td>
+					<input style="border: none;" type="text" size=12>
+				</td>
+				<td>
+					<input style="border: none;" type="text" size=12>
+				</td>
+				<td>
+					<input style="border: none;" type="text" size=8>
+				</td>
+				<td>
+					<input style="border: none;" type="text" size=12>
+				</td>
+			</tr>
+		</table>
+		<br>
+		<table>
+			<tr>
+				<th width="10%" rowspan="4">경력<br>및<br>활동사항</th>
+				<th width="10%"><b>활동명</b></th>
+				<th width="10%"><b>기관명</b></th>
+				<th width="25%"><b>기간</b></th>
+				<th width="10%"><b>활동내용</b></th>
+				<th width="8%" rowspan="4">기타</th>
+				<th width="8%"><b>병역</b></th>
+				<th width="10%"><b>취미</b></th>
+				<th width="10%"><b>특기</b></th>
+			</tr>
+			<tr>
+				<td>
+					<input style="border: none;" type="text" size=10 value="ㅇㅇㅇㅇㅇ">
+				</td>
+				<td>
+					<input style="border: none;" type="text" size=10 value="ㅁㅁㅁㅁㅁ">
+				</td>
+				<td>
+					<input style="border: none;" type="date" name="date">  ~  <input style="border: none;" type="date" name="date">
+				</td>
+				<td>
+					<input style="border: none;" type="text" size=30 value="-">
+				</td>
+				<td rowspan="3">
+					<input type="radio" name="mili">필&nbsp;
+					<input type="radio" name="mili">미필&nbsp;
+					<input type="radio" name="mili">면제
+				</td>
+				<td rowspan="3">
+					<input style="border: none; height: 50px;" type="text" size=10 value="서예,신문보기">
+				</td>
+				<td rowspan="3">
+					<input style="border: none; height: 50px;" type="text" size=10 value="바둑">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input style="border: none;" type="text" size=10>
+				</td>
+				<td>
+					<input style="border: none;" type="text" size=10>
+				</td>
+				<td>
+					<input style="border: none;" type="date" name="date">  ~  <input style="border: none;" type="date" name="date">
+				</td>
+				<td>
+					<input style="border: none;" type="text" size=25>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input style="border: none;" type="text" size=10>
+				</td>
+				<td>
+					<input style="border: none;" type="text" size=10>
+				</td>
+				<td>
+					<input style="border: none;" type="date" name="date">  ~  <input style="border: none;" type="date" name="date">
+				</td>
+				<td>
+					<input style="border: none;" type="text" size=25>
+				</td>
+			</tr>
+		</table>
+		<br>
+	</div>
+	<br><br><br>
+		<center>
+		<button style="border: white; border-radius: 10px; color: white; background-color: indianred; 
+		width: 100px; height: 40px;" onclick="cancel();">🔙 뒤로가기</button>&nbsp;&nbsp;
+		<input style="border: white; border-radius: 10px; color: white; background-color: moccasin; 
+		width: 80px; height: 40px;" type="submit" id="submit" value="✔ 완료" onclick="save();">
+		</center>
+	</form>
+	
+	<script type="text/javascript">
+	function cancel() {
+		alert("작성을 취소하시겠습니까?");
+		document.getElementById("form").cancel();
+	}
+	function save() {
+		alert("제출하시겠습니까?");
+		document.getElementById("form").submit();
+	}
+	</script>
+	
+</body>
+</html>
