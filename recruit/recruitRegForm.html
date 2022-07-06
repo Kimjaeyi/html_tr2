@@ -42,7 +42,6 @@
 	<center><h3><b>입사지원서 작성</b></h3></center>
 	<center><h5><b>내용을 작성해주세요.</b></h5></center>
 	<br>
-	<form action="recruitView.html">
 	<div class="first">
 		<table>
 			<tr>
@@ -322,27 +321,26 @@
 	</div>
 	<br><br><br>
 		<center>
-		<button style="border: white; border-radius: 10px; color: white; background-color: indianred; 
-		width: 100px; height: 40px;" onclick="cancel();">🔙 뒤로가기</button>&nbsp;&nbsp;
-		<input style="border: white; border-radius: 10px; color: white; background-color: skyblue; 
-		width: 70px; height: 40px;" type="submit" id="submit" value="✔ 제출" onclick="save();">&nbsp;&nbsp;
+		<a href="./recruitList.html"><button style="border: white; border-radius: 10px; color: white; background-color: indianred; 
+		width: 100px; height: 40px;" onclick="cancel();">🔙 뒤로가기</button></a>&nbsp;&nbsp;
+		<a href="./recruitView.html"><input style="border: white; border-radius: 10px; color: white; background-color: skyblue; 
+		width: 70px; height: 40px;" type="submit" id="submit" value="✔ 제출" onclick="save();"></a>&nbsp;&nbsp;
 		<input style="border: white; border-radius: 10px; color: white; background-color: lightgray;
 		width: 80px; height: 40px;" type="reset" id="reset" value="🗑 초기화" onclick="here();">&nbsp;&nbsp;
 		</center>
-	</form>
 	
 	<script type="text/javascript">
 	function cancel() {
 		alert("작성을 취소하시겠습니까?");
-		document.getElementById("form").cancel();
+		document.getElementById("").cancel();
 	}
 	function save() {
 		alert("제출하시겠습니까?");
-		document.getElementById("form").submit();
+		document.getElementById("").submit();
 	}
 	function here() {
 		alert("내용을 모두 지우시겠습니까?");
-		document.getElementById("form").reset();
+		document.getElementById("").reset();
 	}
 	</script>
 	
